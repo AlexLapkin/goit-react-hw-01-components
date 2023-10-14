@@ -1,0 +1,38 @@
+.friend_list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0px;  
+   }
+   
+   .friend_item {
+       display: flex;
+       width: 500px;
+       gap: 10px;
+       font-size: 20px;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       box-shadow: 0px 1px 8px 0px rgba(34, 60, 80, 0.2);    
+   }
+   
+   .friend_status {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-right: 20px;
+     margin-left: 30px;
+     margin-top: auto;
+     margin-bottom: auto;
+     }
+     .true {
+       background-color: red;
+     }
+     .false {
+       background-color: green;
+     }
+   
+     .friend_name {
+       font-size: 30px;
+       margin-left: 10px;
+     }
