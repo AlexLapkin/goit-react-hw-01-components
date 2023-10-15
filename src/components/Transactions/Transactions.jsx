@@ -10,7 +10,7 @@ function getRandomColor() {
   return color;
 }
 
-export const TransactionsHistory = ({items}) => {
+const TransactionsHistory = ({items}) => {
   return (
     <div>
       <table className={css.transaction_history}>
@@ -43,3 +43,5 @@ TransactionsHistory.propTypes = {
   amount: PropTypes.string,
   currency: PropTypes.string,  
   };
+
+  export default TransactionsHistory;

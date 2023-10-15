@@ -11,13 +11,13 @@ function getRandomColor() {
   return color;
 }
 
-export const Statistics = ({stats}) => {
+const Statistics = ({title, stats}) => {
   return (
     <div>
       <section className={css.statistics}>
-  <h2 className={css.stat_title}>UPLOAD STATS</h2>
+  <h2 className={css.stat_title}>{title}</h2>
 
-  <ul className={css.statList}>
+  <ul className={css.stat_list}>
     {stats.map(({ id, label, percentage }) => (
       <li className={css.item} style={{backgroundColor: getRandomColor()}} key={id}>
       <span className={css.stat_text}>{label}</span>
@@ -36,3 +36,5 @@ Statistics.propTypes = {
   label: PropTypes.string,
   percentage: PropTypes.number,
   };
+
+  export default Statistics;

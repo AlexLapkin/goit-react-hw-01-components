@@ -1,7 +1,7 @@
 import css from './Profile.module.css';
 import PropTypes from 'prop-types';
 
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
    
  <div className={css.profile}>
@@ -42,3 +42,5 @@ location: PropTypes.string,
 avatar: PropTypes.string,
 stats: PropTypes.object,
 };
+
+export default Profile;
